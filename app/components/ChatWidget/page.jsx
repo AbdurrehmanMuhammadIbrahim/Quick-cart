@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { X, MessageCircle } from 'lucide-react';
 import io from 'socket.io-client';
 import { getUser } from '../../../api/authService';
+import axios from "axios"
+
 const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000";
 
 const socket = io(BASE_URL); // Connect to the backend
