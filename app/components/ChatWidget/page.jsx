@@ -3,13 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import { X, MessageCircle } from 'lucide-react';
 import io from 'socket.io-client';
-import axios from 'axios';   typescript:{
-  ignoreBuildErrors:true,
-  
-      },
-      eslint:{
-          ignoreDuringBuilds:true,
-      }
 import { getUser } from '../../../api/authService';
 const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000";
 
